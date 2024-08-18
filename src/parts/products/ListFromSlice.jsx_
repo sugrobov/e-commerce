@@ -1,8 +1,0 @@
-// import { useSelector } from "react-redux";
-
-// export const ListFromSlice = () => {
-//     const products = useSelector(state => state.products);
-//     console.log("from slice", products);
-
-
-// }
