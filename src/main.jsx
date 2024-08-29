@@ -10,7 +10,7 @@ import FeedBack from "./Pages/FeedBack";
 import Store from "./Pages/Store";
 
 import ErrorPage from "./Pages/ErrorPage";
-import Index from "./Pages/Index";
+// import Index from "./Pages/Index";
 import Main from "./components/Main";
 import Details from "./components/Details";
 import { Provider } from "react-redux";

@@ -3,36 +3,15 @@ import { Link } from "react-router-dom";
 import { productAdded } from "../parts/products/productsSlice";
 import { add } from "../parts/likes/likeSlice";
 import Star from "./UI/Star/Star";
-// import { key } from "localforage";
+
 
 
 function Product({ item }) {
-    // console.log(">> from product ", isLove );
-    // console.log('item', item);
-
     const select = useSelector(state => state.likes.likes);
-    // Object.keys(select).forEach(note => console.log(select[note]))
-    // Object.keys(select).forEach(note => console.log(select[note]))
     const { id, title, price, description, rating, image } = item;
-    // let arr = Object.keys(select).filter(note => select[note].id === id);
-    // let inArray = Object.keys(select).includes(id);
-    // console.log('from product >>>', arr);
-
-
     const dispatch = useDispatch();
 
-
-    // let state = {
-    //     id, title, price, description, rating, image
-    // }
-
-    // const onAdd = (id) => {
-    //     console.log(state)
-
-    // }
-
     let likesArray = Object.keys(select).filter(k => select[k].id === id);
-    // console.log('for ', id, ' > ', likesArray);
 
     let stars = [];
 
@@ -40,9 +19,7 @@ function Product({ item }) {
         stars.push(<Star />)
 
     }
-    // console.log(stars)
-
-
+  
     return (
 
         <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">

@@ -14,8 +14,6 @@ function Main() {
 
     const dispatch = useDispatch();
 
-    const { cartItems } = useSelector(state => state.products);
-
     const [search, setSearch] = useState('');
     const debounce = useDebounce(search);
 
@@ -43,9 +41,9 @@ function Main() {
 
     return (
 
-        <div className="container mx-4 px-4 flex flex-col md:flex-row">
+        <div className="container mx-2 px-2 flex flex-col md:flex-row">
             <div className="md:flex">
-                <aside className="flex items-start justify-start p-4 md:flex-none md:w-1/3 lg:w-1/4">
+                <aside className="flex items-start justify-start p-2 md:flex-none md:w-1/3 lg:w-1/4">
 
                     <div className="bg-gray-200 p-4 w-full">
                         <h4 className="font-bold mb-2">Блок</h4>
