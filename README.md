@@ -1,6 +1,7 @@
 # React + Vite
 
 Проект создан с целью прокачать навыки react-redux.
+
 Стек: react-router-dom, react-redux, tailwind.
 
 Описание работы. Приложение получает данные по адресу https://fakestoreapi.com/products. 
